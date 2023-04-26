@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Validator da Amazon</title>
     <link rel="stylesheet" href="style.css" />
+    <!--aqui eu coloquei um emojicon de cartão na aba da página-->
+    <link rel="shortcut icon" href="Emoji-Credit-Card-Flat.512.png" type="image/x-icon">
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <!--aqui é o meu título e texto que fica no início-->
+    <div class="titulo-texto">
+    <h1>Credit Card Validator e seus benefícios na Amazon!</h1>
+    <h2>O que ganho com isso?</h2>
+  <p>Antes de assinar com a Amazon, você pode validar seu cartão de crédito aqui <br> e ganhar 5 meses de frete grátis!</p>
+    </div>
+    <!-- aqui eu criei um container para poder colocar meu h3 dentro do png do cartão-->
+    <div class="textarea1">
+      <!--picture cartão png
+      <picture>
+        <img src="images-cardvalidator/credit-card-500.png" alt="Cartão de crédito png">
+      </picture>
+    -->
+      <textarea id="texto" placeholder="Digite o número do seu cartão aqui:" minlength="16" maxlength="16" rows="1"></textarea>
+      <div class="bgtexto-img"></div>
+    </div>
     <script src="index.js" type="module"></script>
   </body>
 </html>
