@@ -1,26 +1,28 @@
 @charset "UTF-8";
 /* aqui eu ajustei o fundo da tela com cor e foto */
-body { background-color: rgb(0, 0, 0);
-       background-size: cover;
-       background-position: center;
-       background-image: url(images-cardvalidator/amazon-img);
-       background-repeat: no-repeat;
-}
+       body {
+              background-image: url(images-cardvalidator/amazon-img.jpg);
+              background-attachment: fixed;
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+       }
 /* aqui eu estilizei meu titulo e texto*/
-.titulo-texto { text-align: center;
+       .titulo-texto { text-align: center;
                 color: rgb(255, 255, 255);
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 text-shadow: 0.1em 0.1em 0.2em black;
-              }
-/* aqui eu puxei meu container e coloquei display e position para pode mover o meu h3 no png do cartão */
-.textarea1 { display: inline-block;
-              position: relative;
-}
-       textarea { border: none;
        }
+/* aqui eu tinha puxado meu container e coloquei display e position para pode mover o meu h3 no png do cartão */
 
-       .bgtext-img {
-              position: absolute;
+       #bgtexto-img {
+              position: fixed;
               background-image: url(images-cardvalidator/credit-card-500.png);
               background-repeat: no-repeat;
+              margin-top: -41px;
+       }
+
+       #iform {
+              display: flex;
+              align-items: center;
        }

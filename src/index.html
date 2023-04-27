@@ -7,25 +7,32 @@
     <title>Credit Card Validator da Amazon</title>
     <link rel="stylesheet" href="style.css" />
     <!--aqui eu coloquei um emojicon de cartão na aba da página-->
-    <link rel="shortcut icon" href="Emoji-Credit-Card-Flat.512.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images-cardvalidator/Emoji-Credit-Card-Flat.512.png" type="image/x-icon">
   </head>
   <body>
     <!--aqui é o meu título e texto que fica no início-->
+    
     <div class="titulo-texto">
-    <h1>Credit Card Validator e seus benefícios na Amazon!</h1>
-    <h2>O que ganho com isso?</h2>
-  <p>Antes de assinar com a Amazon, você pode validar seu cartão de crédito aqui <br> e ganhar 5 meses de frete grátis!</p>
+      <h1>Credit Card Validator e seus benefícios na Amazon!</h1>
+      <h2>O que ganho com isso?</h2>
+      <p>Antes de assinar com a Amazon, você pode validar seu cartão de crédito aqui <br> e ganhar 5 meses de frete grátis!</p>
     </div>
-    <!-- aqui eu criei um container para poder colocar meu h3 dentro do png do cartão-->
-    <div class="textarea1">
-      <!--picture cartão png
-      <picture>
-        <img src="images-cardvalidator/credit-card-500.png" alt="Cartão de crédito png">
-      </picture>
-    -->
-      <textarea id="texto" placeholder="Digite o número do seu cartão aqui:" minlength="16" maxlength="16" rows="1"></textarea>
-      <div class="bgtexto-img"></div>
+
+    <!-- aqui eu tinha criado uma div class para pode colocar minha caixa de texto em cima da minha imagem do cartão png-->
+
+
+      <div id="iform">
+    <form action="index.js" method="post" autocomplete="off">
+      <p><label for="inumero">Digite aqui o número:</label>
+      <input type="text" name="numero" id="inumero"></p>
+      <p><input type="submit" value="Enviar"></p>
+    </form>
     </div>
+
+      <div id="bgtexto-img">
+      <img src="images-cardvalidator/credit-card-500.png" alt="Cartao png">
+      </div>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
