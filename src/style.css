@@ -19,10 +19,10 @@
               position: fixed;
               background-image: url(images-cardvalidator/credit-card-500.png);
               background-repeat: no-repeat;
-              margin-top: -41px;
+
        }
 
        #iform {
-              display: flex;
-              align-items: center;
+              
+              
        }

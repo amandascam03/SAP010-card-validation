@@ -18,21 +18,23 @@
       <p>Antes de assinar com a Amazon, você pode validar seu cartão de crédito aqui <br> e ganhar 5 meses de frete grátis!</p>
     </div>
 
-    <!-- agora eu fiz uma div id para poder manipular meu input e move-lo no CSS -->
-
-      <div id="iform">
-    <form action="index.js" method="post" autocomplete="off">
-      <p><label for="inumero">Digite aqui o número:</label>
-      <input type="text" name="numero" id="inumero"></p>
-      <p><input type="submit" value="Enviar"></p>
-    </form>
-    </div>
-
     <!--aqui é o meu png de cartão-->
 
       <div id="bgtexto-img">
       <img src="images-cardvalidator/credit-card-500.png" alt="Cartao png">
       </div>
+
+    <!-- agora eu fiz uma div id para poder manipular meu input e move-lo no CSS -->
+
+      <div id="iform">
+    <form action="index.js" method="post">
+      <p><label for="inumero">Digite aqui o número:</label>
+      <input type="text" name="numero" id="caixa"></p>
+      <button id="botao">Enviar</button>
+    </form>
+    </div>
+
+
 
     <script src="index.js" type="module"></script>
   </body>
