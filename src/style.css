@@ -16,13 +16,20 @@
 /* aqui eu tinha puxado meu container e coloquei display e position para pode mover o meu h3 no png do cartão */
 
        #bgtexto-img {
-              position: fixed;
+              position: static;
               background-image: url(images-cardvalidator/credit-card-500.png);
               background-repeat: no-repeat;
-
+              width: 500px;
        }
 
        #iform {
-              
-              
+              position: relative;
+              bottom: 280px;
+              left: 150px;
+              border-radius: 40px;
+              width: 300px;
+       }
+
+       #caixa {
+              width: 300px;
        }

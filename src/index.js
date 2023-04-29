@@ -1,11 +1,10 @@
 import validator from './validator.js';
 
+var captar = Number;
+
+function chamar() {
+    captar = document.getElementById("numero").value;
+    document.getElementById("digitos").innerHTML = captar;
+};
+
 console.log(validator);
-
-const button = document.getElementById("botao");
-
-button.addEventListener("click", teste);
-
-function teste() {
-    return("Chamou a função teste!");
-}

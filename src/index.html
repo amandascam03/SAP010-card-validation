@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="images-cardvalidator/Emoji-Credit-Card-Flat.512.png" type="image/x-icon">
   </head>
   <body>
+    <script src="index.js" type="module"></script>
     <!--aqui é o meu título e texto que fica no início-->
     
     <div class="titulo-texto">
@@ -27,15 +28,13 @@
     <!-- agora eu fiz uma div id para poder manipular meu input e move-lo no CSS -->
 
       <div id="iform">
-    <form action="index.js" method="post">
-      <p><label for="inumero">Digite aqui o número:</label>
-      <input type="text" name="numero" id="caixa"></p>
-      <button id="botao">Enviar</button>
+    <form action="">
+      <label for="digite">Digite aqui o número:</label>
+      <input type="text" name="numero" id="numero">
+      <button id="botao" onclick="chamar()">Enviar</button>
+      <p id="digitos"></p>
     </form>
+    
     </div>
-
-
-
-    <script src="index.js" type="module"></script>
   </body>
 </html>
