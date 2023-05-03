@@ -1,10 +1,11 @@
 import validator from './validator.js';
 
-var captar = Number;
-
-function chamar() {
-    captar = document.getElementById("numero").value;
-    document.getElementById("digitos").innerHTML = captar;
+function valorNoInput(valor) {
+    if (valor === Number) {
+        alert("Numero de cartão válido");
+    }
 };
+
+valorNoInput(Number);
 
 console.log(validator);
