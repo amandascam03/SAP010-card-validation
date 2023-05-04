@@ -24,12 +24,16 @@
 
        #iform {
               position: relative;
-              bottom: 280px;
+              bottom: 125px;
               left: 150px;
               border-radius: 40px;
               width: 300px;
        }
 
-       #caixa {
-              width: 300px;
+       #numero {
+              width: 310px;
+       }
+
+       #botao {
+              width: 180px;
        }
