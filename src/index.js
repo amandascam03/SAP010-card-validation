@@ -14,27 +14,32 @@ botao.addEventListener("click", function(e) {
     //fiz uma const value para poder mostrar o valor inserido no input
     const value = numero.value;
 
-    /*fiz um alert para abrir uma janela mostrando se a quantidade de dígitos do cartão que o usuário inseriu é
-suficiente ou não, usando if e else para as condições
-*/
+    /*fiz um getElementById para mostrar na tela em um paragrafo <p> se a quantidade de dígitos do cartão que o usuário inseriu é
+suficiente ou não, usando if e else para as condições*/
     if (value.length == 16) {
-        alert(`Seu cartão de número ${value} é válido`);
+        document.getElementById("alerta").style.border = 'thick outset green';
+        document.getElementById("alerta").style.backgroundColor = 'green';
+        document.getElementById("alerta").innerHTML = `Parabéns! seu cartão de número ${value} é válido.`;
     }
     else if (value.length >= 1 && value.length <=15) {
-        alert('Por favor, insira até 16 dígitos');
+        document.getElementById("alerta").style.border = 'thick outset red';
+        document.getElementById("alerta").style.backgroundColor = 'red';
+        document.getElementById("alerta").innerHTML = "Por favor, insira até 16 dígitos.";
     }
     else if (value.length == 0) {
-        document.getElementById("alerta").style.border = 'thick outset black'
-        document.getElementById("alerta").style.backgroundColor = 'black';
-        document.getElementById("alerta").innerHTML = "Por favor, insira os dígitos.";
-        //alert('Por favor, digite o número do seu cartão')
+        document.getElementById("alerta").style.border = 'thick outset red';
+        document.getElementById("alerta").style.backgroundColor = 'red';
+        document.getElementById("alerta").innerHTML = "Por favor, insira os dígitos do cartão.";
+    }
+    else if (value.length >=17) {
+        document.getElementById("alerta").style.border = 'thick outset red';
+        document.getElementById("alerta").style.backgroundColor = 'red';
+        document.getElementById("alerta").innerHTML = "Você inseriu muitos números.";
     };
 });
 
 /*pretendo fazer:
-*ainda não tenho certeza*: trocar alert por aparecer na tela
-não deixar o usuario inserir letras
-não deixar o campo em branco
+algoritmo de luhn para retornar falso se o número for inválido e true se for válido
 mascarar os 12 primeiros dígitos do cartão
 */
 

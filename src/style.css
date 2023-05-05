@@ -4,7 +4,6 @@
        body {
               background-image: url(images-cardvalidator/amazon-img.jpg);
               background-attachment: fixed;
-              background-size: cover;
               background-position: center;
               background-repeat: no-repeat;
               overflow: hidden;
@@ -15,13 +14,12 @@
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 text-shadow: 0.1em 0.1em 0.2em black;
        }
-/* aqui eu tinha puxado meu container e coloquei display e position para pode mover o meu h3 no png do cartão */
 
        #bgtexto-img {
-              position: static;
-              background-image: url(images-cardvalidator/credit-card-500.png);
+              position: relative;
               background-repeat: no-repeat;
               width: 500px;
+              left: 30%;
        }
 
        #iform {
@@ -29,7 +27,10 @@
               bottom: 125px;
               left: 150px;
               border-radius: 40px;
+              margin: 0px;
               width: 300px;
+              left: 559px;
+              height: 90px;
        }
 
        #numero {
@@ -45,15 +46,16 @@
               appearance: none;
        }
 
-#alerta {
+       #alerta {
        resize: none;
        position: relative;
-       left: 550px;
-       bottom: 30px;
+       right: 25%;
+       bottom: -40px;
        height: 25px;
-       width: 410px;
-       padding: 4px;
-       font-size: 20px;
+       width: 400px;
+       padding: 5px;
+       margin: 9px;
+       margin-right: 20px;
        text-align: center;
        font-style: italic;
        color: aliceblue;
