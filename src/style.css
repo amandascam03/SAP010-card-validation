@@ -1,11 +1,13 @@
 @charset "UTF-8";
-/* aqui eu ajustei o fundo da tela com cor e foto */
+/* aqui eu ajustei o fundo da tela com cor e foto, coloquei overflow:hidden pois minha foto 
+é alta e ficava aparecendo barra de rolagem */
        body {
               background-image: url(images-cardvalidator/amazon-img.jpg);
               background-attachment: fixed;
               background-size: cover;
               background-position: center;
               background-repeat: no-repeat;
+              overflow: hidden;
        }
 /* aqui eu estilizei meu titulo e texto*/
        .titulo-texto { text-align: center;
@@ -37,3 +39,23 @@
        #botao {
               width: 180px;
        }
+
+       input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+              margin: 0;
+              appearance: none;
+       }
+
+#alerta {
+       resize: none;
+       position: relative;
+       left: 550px;
+       bottom: 30px;
+       height: 25px;
+       width: 410px;
+       padding: 4px;
+       font-size: 20px;
+       text-align: center;
+       font-style: italic;
+       color: aliceblue;
+       font-family: sans-serif;
+}

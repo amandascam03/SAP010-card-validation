@@ -21,10 +21,13 @@ suficiente ou não, usando if e else para as condições
         alert(`Seu cartão de número ${value} é válido`);
     }
     else if (value.length >= 1 && value.length <=15) {
-        alert('Por favor, insira até 16 dígitos')
+        alert('Por favor, insira até 16 dígitos');
     }
     else if (value.length == 0) {
-        alert('Por favor, digite o número do seu cartão')
+        document.getElementById("alerta").style.border = 'thick outset black'
+        document.getElementById("alerta").style.backgroundColor = 'black';
+        document.getElementById("alerta").innerHTML = "Por favor, insira os dígitos.";
+        //alert('Por favor, digite o número do seu cartão')
     };
 });
 
