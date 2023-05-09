@@ -38,7 +38,11 @@
        }
 
        #botao {
-              width: 180px;
+              width: 190px;
+              position: relative;
+              top: 15px;
+              left: 6px;
+              border-radius: 20px;
        }
 
        input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
