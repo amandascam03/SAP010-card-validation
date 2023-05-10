@@ -1,18 +1,21 @@
 import validator from './validator.js';
 
 //essa é a variavel const que pega a id do meu botão, chamada "botao"
-const botao = document.getElementById("botao")
+const botao = document.getElementById("botao");
 
 /*eu usei o addEventListener para adicionar ações quando meu botão sofrer um "click"
 em seguida fiz uma função para o preventDefault, porque não quero enviar o valor inserido para nenhum lugar*/
 botao.addEventListener("click", function(e) {
     e.preventDefault();
 
-    //fiz uma variavel const para pegar o valor inserido no input
-    const numeroInserido = document.getElementById("numero");
+    //fiz uma variavel const para pegar o valor do input
+    //const numeroInserido = document.getElementById("numero");
 
-    //fiz uma const valor para poder mostrar o valor inserido no input
-    let valor = numero.value;
+    //fiz uma const valor para poder mostrar o valor inserido no input na string retornada no <p>
+    let valor = document.getElementById("numero").value;
+
+    let resultado = validator.isValid(numero);
+    //let maskify = validator.maskify
 
     /*fiz um getElementById para mostrar na tela em um paragrafo <p> se a quantidade de dígitos do cartão que o usuário inseriu é
 suficiente ou não, usando if e else para as condições*/
@@ -35,8 +38,16 @@ suficiente ou não, usando if e else para as condições*/
         document.getElementById("alerta").style.border = 'thick outset red';
         document.getElementById("alerta").style.backgroundColor = 'red';
         document.getElementById("alerta").innerHTML = "Você inseriu muitos números.";
-    };
+    }
+    else {
+        document.getElementById("alerta").style.border = 'thick outset red';
+        document.getElementById("alerta").style.backgroundColor = 'red';
+        document.getElementById("alerta").innerHTML = "Infelizmente esse cartão é inválido.";
+    }
 });
+
+//teste
+validator.isValid("1233456");
 
 /*pretendo fazer:
 algoritmo de luhn para retornar falso se o número for inválido e true se for válido
