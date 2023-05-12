@@ -14,7 +14,7 @@ botao.addEventListener("click", function(e) {
     //fiz uma const valor para poder mostrar o valor inserido no input na string retornada no <p>
     let valor = document.getElementById("numero").value;
 
-    let resultado = validator.isValid(numero);
+    //let resultado = validator.isValid(numero);
     //let maskify = validator.maskify
 
     /*fiz um getElementById para mostrar na tela em um paragrafo <p> se a quantidade de dígitos do cartão que o usuário inseriu é
@@ -48,10 +48,7 @@ suficiente ou não, usando if e else para as condições*/
 
 //teste
 validator.isValid("1233456");
-
-/*pretendo fazer:
-algoritmo de luhn para retornar falso se o número for inválido e true se for válido
-mascarar os 12 primeiros dígitos do cartão
-*/
+const resultado = validator.isValid(numero);
+console.log(resultado);
 
 console.log(validator);
