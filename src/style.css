@@ -9,10 +9,11 @@
               overflow: hidden;
        }
 /* aqui eu estilizei meu titulo e texto*/
-       .titulo-texto { text-align: center;
-                color: rgb(255, 255, 255);
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                text-shadow: 0.1em 0.1em 0.2em black;
+       .titulo-texto { 
+              text-align: center;
+              color: rgb(255, 255, 255);
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              text-shadow: 0.1em 0.1em 0.2em black;
        }
 
        #bgtexto-img {
@@ -45,7 +46,7 @@
               border-radius: 20px;
        }
 
-       input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+       input::-webkit-outer-spin-button,input::-webkit-inner-spin-button { /*para tirar as setas do input number*/
               margin: 0;
               appearance: none;
        }
