@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* aqui eu ajustei o fundo da tela com cor e foto, coloquei overflow:hidden pois minha foto 
+é alta e ficava aparecendo barra de rolagem */
+       body {
+              background-image: url(images-cardvalidator/amazon-img.jpg);
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              overflow: hidden;
+       }
+/* aqui eu estilizei meu titulo e texto*/
+       .titulo-texto { 
+              text-align: center;
+              color: rgb(255, 255, 255);
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              text-shadow: 0.1em 0.1em 0.2em black;
+       }
+
+       #bgtexto-img {
+              position: relative;
+              background-repeat: no-repeat;
+              width: 500px;
+              left: 30%;
+       }
+
+       #iform {
+              position: relative;
+              bottom: 125px;
+              left: 150px;
+              border-radius: 40px;
+              margin: 0px;
+              width: 300px;
+              left: 559px;
+              height: 90px;
+       }
+
+       #numero {
+              width: 310px;
+       }
+
+       #botao {
+              width: 190px;
+              position: relative;
+              top: 15px;
+              left: 6px;
+              border-radius: 20px;
+       }
+
+       input::-webkit-outer-spin-button,input::-webkit-inner-spin-button { /*para tirar as setas do input number*/
+              margin: 0;
+              appearance: none;
+       }
+
+       #alerta {
+       resize: none;
+       position: relative;
+       right: 25%;
+       bottom: -40px;
+       height: 25px;
+       width: 400px;
+       padding: 5px;
+       margin: 9px;
+       margin-right: 20px;
+       text-align: center;
+       font-style: italic;
+       color: aliceblue;
+       font-family: sans-serif;
+}

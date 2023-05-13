@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Validator da Amazon</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--aqui eu coloquei um emojicon de cartão na aba da página-->
+    <link rel="shortcut icon" href="images-cardvalidator/Emoji-Credit-Card-Flat.512.png" type="image/x-icon">
+  </head>
+  <body>
+    <script src="index.js" type="module"></script>
+    <!--aqui é o meu título e texto que fica no início-->
+    
+    <div class="titulo-texto">
+      <h1>Credit Card Validator e seus benefícios na Amazon!</h1>
+      <h2>O que ganho com isso?</h2>
+      <p>Antes de assinar com a Amazon, você pode validar seu cartão de crédito aqui <br> e ganhar 5 meses de frete grátis!</p>
+    </div>
+
+    <!--aqui é o meu png de cartão-->
+
+    <div id="bgtexto-img">
+      <img src="images-cardvalidator/credit-card-500.png" alt="Cartao png">
+    </div>
+
+    <!-- fiz uma div id para poder manipular meu input e mover ele por cima da imagem no CSS -->
+
+    <div id="iform">
+      <form action="" autocomplete="off">
+        <label for="digite">Digite aqui o número:</label>
+        <input type="number" name="numero" id="numero" placeholder="0000 0000 0000 0000">
+        <button id="botao">Enviar</button>
+        <p id="alerta"></p>
+      </form>
+    
+    </div>
+  </body>
+</html>
