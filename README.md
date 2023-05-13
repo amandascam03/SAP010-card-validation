@@ -58,7 +58,11 @@ Esses são os requisitos que o meu projeto atendeu:
 
 * ![linguagens](html-css-js.png)
 
-**2. Desenvolvido por**
+**2. Desenvolvido por:**
 
 ![github](github-logo.png) 
 * [Amanda Araujo](https://github.com/amandascam03)
+
+**Link do site disponível:**
+
+[Clique aqui](https://amandascam03.github.io/SAP010-card-validation/)
