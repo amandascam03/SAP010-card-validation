@@ -59,4 +59,4 @@ Esses são os requisitos que o meu projeto atendeu:
 **2. Desenvolvido por**
 
 * Amanda Araujo
-* ![github](github-logo.png)(https://github.com/amandascam03)
+![https://github.com/amandascam03](github-logo.png)
