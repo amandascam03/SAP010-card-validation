@@ -50,6 +50,8 @@ Esses são os requisitos que o meu projeto atendeu:
 
 * [ X ] Os métodos `validator` (`isValid` e `maskify`) devem ser cobertos por testes unitários.
 
+![testes](tests.png)
+
 ## 4. Considerações Finais
 
 **1. Linguagens utilizadas:**
