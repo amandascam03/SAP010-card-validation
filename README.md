@@ -54,7 +54,7 @@ Esses são os requisitos que o meu projeto atendeu:
 
 **1. Linguagens utilizadas:**
 
-* ![linguagens](html-css-js.jpg)
+* ![linguagens](html-css-js.png)
 
 **2. Desenvolvido por**
 
