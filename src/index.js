@@ -18,9 +18,9 @@ botao.addEventListener("click", function(e) {
 suficiente ou não, se o campo está vazio e se é true ou false, usando if e else para as condições*/
     
   if (valor.length === 0) {
-    document.getElementById("alerta").style.border = 'thick outset red';
-    document.getElementById("alerta").style.backgroundColor = 'red';
-    document.getElementById("alerta").innerHTML = "O campo está vazio. Por favor, insira os dígitos do cartão.";
+    document.getElementById("alerta").style.border = 'thick outset red'; //faz a borda para o alerta na tela
+    document.getElementById("alerta").style.backgroundColor = 'red'; //coloca a cor de fundo do paragrafo pego no HTML
+    document.getElementById("alerta").innerHTML = "O campo está vazio. Por favor, insira os dígitos do cartão."; //pega o paragrafo no HTML e insere o alerta
   }
   else if (valor.length >= 1 && valor.length <= 15) {
     document.getElementById("alerta").style.border = 'thick outset red';
@@ -36,11 +36,12 @@ suficiente ou não, se o campo está vazio e se é true ou false, usando if e el
     document.getElementById("alerta").style.border = 'thick outset green';
     document.getElementById("alerta").style.backgroundColor = 'green';
     document.getElementById("alerta").innerHTML = `Parabéns! seu cartão de número ${maskified} é válido.`;
+    document.getElementById("numero").value=''; //limpa o campo do input após o cartão ser validado
   }
   else {
     document.getElementById("alerta").style.border = 'thick outset red';
     document.getElementById("alerta").style.backgroundColor = 'red';
-    document.getElementById("alerta").innerHTML = "Infelizmente esse cartão é inválido.";
+    document.getElementById("alerta").innerHTML = `Infelizmente seu cartão de número ${maskified} é inválido.`;
   }
 
 });
