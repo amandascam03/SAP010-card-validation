@@ -61,7 +61,7 @@ Esses são os requisitos que o meu projeto atendeu:
 **2. Desenvolvido por:**
 
 ![github](github-logo.png) 
-* [Amanda Araujo](https://github.com/amandascam03)
+[Amanda Araujo](https://github.com/amandascam03)
 
 **Link do site disponível:**
 
