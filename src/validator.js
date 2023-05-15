@@ -33,7 +33,7 @@ const validator = { //atribuindo o validator a uma variavel
   },
 
   maskify: function(numeroMascarado){ // função para mascarar os primeiros dígitos exceto os 4 ultimos
-    const string = numeroMascarado.toString(); //transforma a array em uma string
+    const string = numeroMascarado.toString(); //transforma os numeros em uma string
     const arr = string.split(''); //coloca a string em uma array de substrings
 
     for (let i = 0; i < arr.length - 4; i++){ //executa a função até que atinja o comprimento da array - 4, para mascarar apenas os 12 primeiros dígitos
