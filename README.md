@@ -33,7 +33,7 @@ O tema é direcionado para pessoas que querem 5 meses de frete grátis na Amazon
 Neste projeto, foi trabalhado os fundamentos do JavaScript (apenas vanilla JavaScript), incluindo conceitos como variáveis, condicionais e funções,
 bem como eventos e manipulação básica de DOM, fundamentos HTML e CSS. Outros conceitos inseridos de testes unitários, controle de versão com Git, criação de contas e repositórios e implantação com GitHub Pages.
 
-## 3. Critérios de Aceitação do Projeto Atendidos
+## 3. Critérios de Aceitação Mínimos do Projeto Atendidos
 
 Esses são os requisitos que o meu projeto atendeu:
 
